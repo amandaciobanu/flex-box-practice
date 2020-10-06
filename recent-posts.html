@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Living the simple life</title>
+  <title>Title</title>
 </head>
 <body>
   <header>
@@ -16,9 +16,9 @@
       </div>
       <nav>
         <ul>
-          <li><a class="current-page" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about-me.html">About Me</a></li>
-          <li><a href="recent-posts.html">Recent Posts</a></li>
+          <li><a class="current-page" href="recent-posts.html">Recent Posts</a></li>
         </ul>
       </nav>
     </div>   <!--close container-->
@@ -26,19 +26,25 @@
 
   <div class="container container-flex">
     <main role="main">
-      <!--    featured article-->
-      <article class="article-featured">
-        <h2 class="article-title">Find simplicity in your life</h2>
-        <img src="images/desktop.jpg" alt="desktop table with a lamp and clock" class="article-image">
-        <p class="article-info"> August 20 2020 | 1 Comment</p>
-        <p class="article-body">
-          <strong>Life can get complicated really quick</strong>, but it doesn't have to be! There are many ways to simplify your life,
-          <a href="">a few of which we've explored in the past</a>. This week we're taking a bit of approach through, in how you can find simplicity in the life you are already living.
-        </p>
-        <a href="#" class="article-read-more">Continue Reading</a>
+      <!--      recent article-->
+      <article class="article-recent">
+        <div class="article-recent-main">
+          <h2 class="article-title">Find simplicity in your life</h2>
+          <p class="article-body">
+            <strong>Life can get complicated really quick</strong>, but it doesn't have to be! There are many ways to simplify your life,
+            <a href="">a few of which we've explored in the past</a>. This week we're taking a bit of approach through, in how you can find simplicity in the life you are already living.
+          </p>
+          <a href="#" class="article-read-more">Continue Reading</a>
+        </div>
+        <div class="article-recent-secondary">
+          <img src="images/desktop.jpg" alt="desktop table with a lamp and clock" class="article-image">
+          <p class="article-info">
+            August 20 2020 | 1 Comment
+          </p>
+        </div>
       </article>
       
-<!--      recent article-->
+      <!--      recent article-->
       <article class="article-recent">
         <div class="article-recent-main">
           <h2 class="article-title">Keeping cooking simple</h2>
@@ -87,7 +93,7 @@
     </article>
     </main>
     
-<!--    side bar-->
+    <!--    side bar-->
     <aside class="sidebar">
       <div class="sidebar-widget">
         <h2 class="widget-title">About Me</h2>
@@ -103,7 +109,7 @@
           <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
           <img src="images/cook-simple.jpg" alt="" class="widget-image">
         </div>
-
+        
         <div class="widget-recent-post">
           <h3 class="widget-recent-post-title">Simplicity and work</h3>
           <img src="images/work-simple.jpg" alt="" class="widget-image">
@@ -114,7 +120,7 @@
         </div>
       </div>
     </aside>
-
+  
   </div>
   <!--    footer-->
   <footer>
