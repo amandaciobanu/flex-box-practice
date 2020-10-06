@@ -80,6 +80,8 @@ strong {
   color: #1792D2;
   text-decoration: none;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .article-read-more:hover,
@@ -92,6 +94,17 @@ strong {
   margin: 2em 0;
 }
 
+.widget-title{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+}
+.widget-recent-post-title{
+  order: -1;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+}
 
 /*==========================*/
 /*      Layout              */
@@ -110,11 +123,17 @@ strong {
 }
 
 header{
-  max-width: 960px;
-  margin: 0 auto;
   text-align: center;
   background: #F8F8F8;
   padding: 2em 0;
+  margin-bottom: 3em;
+}
+
+footer{
+  background-color: #143774;
+  color: #1792D2;
+  text-align: center;
+  padding: 2.2em 0;
 }
 
 /*==========================*/
@@ -143,6 +162,15 @@ nav a {
 nav a:hover,
 nav a:focus{
   color: #1792D2;
+}
+
+@media (max-width: 675px){
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: .5em 0;
+  }
 }
 
 .current-page{
@@ -183,10 +211,66 @@ nav a:focus{
     flex-direction: row;
   }
   main {
-    width: 75%;
+    width: 70%;
   }
   aside {
-    width: 20%;
+    width: 25%;
+    min-width: 200px;
+    margin-left: 1em;
+  }
+  .article-image{
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
   }
 }
 
+@media (min-width: 675px ){
+  .article-recent{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article-recent-main{
+    width: 67%;
+  }
+
+  .article-recent-secondary{
+      width: 30%;
+  }
+  .article-featured{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .article-image{
+    order: -2;
+  }
+  .article-info{
+    order: -1;
+  }
+
+}
+
+/*    widgets*/
+
+.sidebar-widget{
+  border: 10px solid #efefef;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.widget-recent-post{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1em;
+}
+
+.widget-recent-post:last-child{
+  border: 0;
+  margin: 0;
+}
+
+.widget-image{
+  order: -2;
+}
